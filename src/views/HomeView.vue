@@ -1,5 +1,6 @@
 <script setup>
-
+import MixesInspiredBy from '../components/MixesInspiredBy.vue';
+import MultiArtistSelect from '../components/MultiArtistSelect.vue';
 </script>
 
 <template>
@@ -13,9 +14,133 @@
       <div class="py-3"></div>
 
       <div class="flex justify-between w-full gap-8">
-        <div class="xl:w-1/3 w-1/2 text-white">
-          TEST
+        <div class="xl:w-1/3 w-1/2">
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="VAMPIRE (feat. Oli Sykes of Bring Me The Horizon)"
+            by="Ic3peak"
+            to="/artist"
+            image="https://picsum.photos/id/147/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Deutschland"
+            by="Rammstein"
+            to="/artist"
+            image="https://picsum.photos/id/166/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Fallout"
+            by="Masked Wolf"
+            to="/artist"
+            image="https://picsum.photos/id/127/300/300"
+          />
         </div>
+        <div class="xl:w-1/3 w-1/2">
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Pray For Plagues"
+            by="Bring Me the Horizon"
+            to="/artist"
+            image="https://picsum.photos/id/201/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Candy truck / You Expected"
+            by="Bring Me The Horizon"
+            to="/artist"
+            image="https://picsum.photos/id/222/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="L'enfant sauvage"
+            by="Gojira"
+            to="/artist"
+            image="https://picsum.photos/id/212/300/300"
+          />
+        </div>
+        <div class="xl:w-1/3 w-1/2">
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Bad Life"
+            by="Sigrid"
+            to="/artist"
+            image="https://picsum.photos/id/211/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Dystopia"
+            by="Megadeth"
+            to="/artist"
+            image="https://picsum.photos/id/123/300/300"
+          />
+          <MixesInspiredBy
+            class="pb-1.5"
+            text="Can You Feel My Heart"
+            by="Bring Me The Horizon"
+            to="/artist"
+            image="https://picsum.photos/id/94/300/300"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="px-8 mt-8 min-w-[800px]">
+      <div class="text-white text-xl font-semibold inline-block" >
+        Made for you
+      </div>
+
+      <div class="py-3"></div>
+
+      <div class="flex justify-start gap-7">
+        <MultiArtistSelect
+        class="w-1/4"
+        category="daily"
+        text="Featuring Bring Me the Horizon, Our Last Night, Bad Omens, The Retaliators"
+        to="/artist"
+        :image="{
+          one: 'https://picsum.photos/id/45/300/300',
+          two: 'https://picsum.photos/id/55/300/300',
+          three: 'https://picsum.photos/id/54/300/300',
+          four: 'https://picsum.photos/id/76/300/300',
+        }"
+        />
+        <MultiArtistSelect
+        class="w-1/4"
+        category="daily"
+        text="Featuring Metallica, Jessye Norman, Dresdner Philharmonie, San Francisco Symphony"
+        to="/artist"
+        :image="{
+          one: 'https://picsum.photos/id/123/300/300',
+          two: 'https://picsum.photos/id/141/300/300',
+          three: 'https://picsum.photos/id/111/300/300',
+          four: 'https://picsum.photos/id/212/300/300',
+        }"
+        />
+        <MultiArtistSelect
+        class="w-1/4"
+        category="daily"
+        text="Featuring Machine Gun Kelly, Girlfriends, Mod Sun, Chri$tian Gate$"
+        to="/artist"
+        :image="{
+          one: 'https://picsum.photos/id/242/300/300',
+          two: 'https://picsum.photos/id/121/300/300',
+          three: 'https://picsum.photos/id/221/300/300',
+          four: 'https://picsum.photos/id/188/300/300',
+        }"
+        />
+        <MultiArtistSelect
+        class="w-1/4"
+        category="daily"
+        text="Featuring Panter, Alden Karik, Arturiko, Krista Masalta"
+        to="/artist"
+        :image="{
+          one: 'https://picsum.photos/id/65/300/300',
+          two: 'https://picsum.photos/id/98/300/300',
+          three: 'https://picsum.photos/id/78/300/300',
+          four: 'https://picsum.photos/id/74/300/300',
+        }"
+        />
       </div>
     </div>
   </div>
