@@ -14,13 +14,13 @@ const props = defineProps({slide:Object})
             <div
                 class="relative"
                 @mouseenter="$event => isHover =true "
-                @mouseleave="$event => ishover =false"
+                @mouseleave="$event => isHover =false"
             >
                 <div
                     :class="isHover ? 'transition ease-in duration-150 bg-opacity-30' : 'transition ease-out duration-150 bg-opacity-5 '"
                     class="absolute w-full h-full bg-black z-10 rounded-md"
                 />
-                <div class="absolute z-50 bottom-3 letf-3 rounded-full bg-white p-1.5">
+                <div class="absolute z-50 bottom-3 left-3 rounded-full bg-white p-1.5">
                     <Play :size="27"/>
                 </div>
                 <div
@@ -28,12 +28,12 @@ const props = defineProps({slide:Object})
                 class="absolute z-50 bottom-3 left-[60px] rounded-full bg-white p-2"
                 >
                     <HeartOutline 
-                    :class="isHover ? 'transition ease-in duration-150 bg-opacity-100' : 'transition ease-out duration-150 bg-opacity-0 '"
+                    :class="isHover ? 'transition ease-in duration-150 opacity-100' : 'transition ease-out duration-150 opacity-0 '"
                     :size="23"
                     />
                 </div>
                 <div
-                :class="isHover ? 'transition ease-in duration-150 bg-opacity-100' : 'transition ease-out duration-150 bg-opacity-0 '"
+                :class="isHover ? 'transition ease-in duration-150 opacity-100' : 'transition ease-out duration-150 opacity-0 '"
                 class="absolute z-50 bottom-3 left-[107px] rounded-full bg-white p-1.5"
                 >
                     <DotsHorizontal 
@@ -41,7 +41,7 @@ const props = defineProps({slide:Object})
                     :size="27"
                     />
                 </div>
-                <img 
+                <img width="25"
                     class="absolute z-40 right-0 bottom-0 pb-3 mr-3 contrast-[1.4] brightness-[1.1]"
                     src="/images/deezer-sound-icon.png">
                 <img class="rounded-md aspect-square" :src="slide.url">
