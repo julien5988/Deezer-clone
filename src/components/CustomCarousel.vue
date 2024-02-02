@@ -1,5 +1,5 @@
 <script setup>
-import { toRefs, ref,  } from 'vue'
+import { toRefs, ref, defineProps } from 'vue'
 import { RouterLink } from 'vue-router'
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue'
 import ChevronRight from 'vue-material-design-icons/ChevronRight.vue'
